@@ -1,0 +1,70 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background: #d3e2ff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  /* border: 1px solid purple; */
+  border-radius: 10px;
+  max-width: 550px;
+  margin: 100px auto;
+  box-shadow: 5px 5px 10px 0 #ccc, inset -3px -3px 0px 1px #590101,
+    inset 3px 3px 0px 1px #590101;
+  background: #bbb;
+}
+.container h2 {
+  margin-top: 0;
+  background-color: #8f0d0d;
+  border-radius: 10px 10px 0 0;
+  text-align: center;
+  padding: 15px 0;
+  color: white;
+  box-shadow: 0px 3px 5px 0 #999, inset 0px -3px 5px 1px #590101;
+  width: 100%;
+}
+.counter {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 98%;
+}
+.cell {
+  display: flex;
+  flex-direction: column;
+  color: #222;
+  width: 120px;
+  border-radius: 15px;
+  margin-bottom: 20px;
+}
+.cell h3 {
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0;
+}
+.cell p {
+  text-align: center;
+  font-size: 2rem;
+  border: #777 1px solid;
+  padding: 50px 0px;
+  border-radius: 10px;
+  background: #999;
+}
+
+@media (max-width: 549px) {
+  .counter {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-evenly;
+  }
+  .cell {
+    justify-self: center;
+  }
+}
